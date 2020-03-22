@@ -1,6 +1,7 @@
 <template>
   <div id="main-app" class="container">
     <h4>{{title}}</h4>
+    <font-awesome-icon icon='plus' />Add Appointment
   </div>
 </template>
 
@@ -12,7 +13,8 @@ export default {
       return { 
       title: "Appointment List",
       };
-    }
+    },
+
   };
 </script>
 

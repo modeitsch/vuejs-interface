@@ -6,6 +6,7 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css'
 
 import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 import {
   faPlus,
@@ -18,6 +19,10 @@ library.add(faPlus,
   faMinus,
   faTrash,
   faCheck)
+
+
+
+  Vue.component('font-awesome-icon', FontAwesomeIcon)
 
 Vue.config.productionTip = false
 
