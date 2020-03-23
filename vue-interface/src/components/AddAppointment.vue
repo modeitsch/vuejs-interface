@@ -87,20 +87,19 @@ export default {
     };
   },
   methods: {
-    requestAdd: function() {
+   requestAdd: function() {
       this.formData = {
         petName: this.formData.petName,
-        ownerName: this.formData.ownerName,
-        aptDate: `${this.formData.aptDate} ${this.formData.aptTime}`,
+        petOwner: this.formData.ownerName,
+        aptDate: this.formData.aptDate + " " + this.formData.aptTime,
         aptNotes: this.formData.aptNotes
       };
-      this.$emit('add', this.formData);
-      this.formData = [],
+      this.$emit("add", this.formData);
+      this.formData = [];
       this.hidepanel = true;
-
     }
-  },
-}
+  }
+};
 </script>
 <style>
 .card-header {
